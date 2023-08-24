@@ -28,7 +28,7 @@ Initially there were lots of themes and tags in the dataset. After some analysis
 
 
 ## Model Training 
-Finetuned a `roberta-base` (RoBERTa) model which is a transformers model from HuggingFace Transformers using Fastai and Blurr. The model training notebook can be viewed [here](https://github.com/tanvir-ishraq/TextThema-Multi-Classifier/blob/main/notebooks/quote-multi-classifier.ipynb)
+Finetuned a `roberta-base` (RoBERTa) model which is a transformers model from HuggingFace Transformers using Fastai and Blurr. With ~95% accuracy. The model training notebook can be viewed [here](https://github.com/tanvir-ishraq/TextThema-Multi-Classifier/blob/main/notebooks/quote-multi-classifier.ipynb)
 
 ## Benchmark
 
