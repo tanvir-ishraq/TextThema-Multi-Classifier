@@ -5,10 +5,10 @@ Here is documentation of the project process from data collection, model trainin
 The model can classify 103 different types of themes despite from input. Despite the input content is Creative, poetry, Literary, Descriptive, synopsis, quotes, songs or Dialogues:<br/>The keys of `deployment_hf\tag_types_encoded.json` shows the theme types. 
 
 The goal of this project was multimodal. To cover diverse range of objectives.
-* detect nuances like humor and simile/metaphor, 
-* detect Author Intents and content themes, 
-* possibly detect plus recommend related books, famous people/authors, fictional character, franchise from input content.
-* automate/recommend hashtags.
+* detect nuances like humor and simile/metaphor
+* detect Author Intents and content themes 
+* possibly detect plus recommend related books, famous people/authors, fictional character, franchise from input content. so, you can explore new horizons according to your interest
+* automate / recommend hashtags.
 
 
 
