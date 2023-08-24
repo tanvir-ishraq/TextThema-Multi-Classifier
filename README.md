@@ -16,7 +16,7 @@ The Dynamic website's unpredictable time based login prompts were handled. The d
 
 The massive NLP data were scraped with `scraper/nlp_dataset_scraper.py` and stored in `scraper/quote-nlp-dataset-scraped.csv`. I employed an effecient tracking management system for scrap of massive NLP data to prevent data loss.
 
-In total, I scraped ~43,000 different content style data e.g. quote, poems, synopsis, dialogue, story and corresponding data's themes, tags. Finally, ~38,500 dataset reamined after cleaning.
+In total, I scraped ~43,000 different content style data e.g. including quote, poems, synopsis, dialogue, story and corresponding data's themes, tags. Finally, ~38,500 dataset reamined after cleaning.
 
 
 
