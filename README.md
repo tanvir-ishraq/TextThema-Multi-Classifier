@@ -1,8 +1,7 @@
 # TextThema - Content Classifier and Recommender System
-
 A Text Content Themes Classifier and smart Recommender System. 
 Here is documentation of the project process from data collection, model training, and deployment. <br/>
-The model can classify 103 different types of themes despite from input. Despite the input content is Creative, poetry, Literary, Descriptive, synopsis, quotes, songs or Dialogues:<br/>The keys of `deployment_hf\tag_types_encoded.json` shows the theme types. 
+The model can classify 103 different types of themes despite from input. Despite the input content is Creative, poetry, Literary, Descriptive, synopsis, quotes, songs or Dialogues.<br/>The keys of `deployment_hf\tag_types_encoded.json` shows all 103 theme types. 
 
 The goal of this project was multimodal. To cover diverse range of objectives.
 * detect nuances like humor and simile/metaphor
@@ -11,9 +10,7 @@ The goal of this project was multimodal. To cover diverse range of objectives.
 * automate / recommend hashtags.
 
 
-
  ## Data Collection
-
 Data was collected from a Goodreads Quotes Listing: https://www.goodreads.com/quotes <br/>
 The Dynamic website's unpredictable time based login prompts were handled. The data collection process was as follows: 
 
@@ -35,11 +32,14 @@ Finetuned a `roberta-base` (RoBERTa) model which is a transformers model from Hu
 ## Model Compression and ONNX Inference
 The trained model has a memory of 900+MB. I compressed this model using ONNX quantization and brought it to 125MB. 
 
-## Model Deployment
 
+
+## Model Deployment
 The compressed model is deployed to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/tanvir-ishraq/quote-text-style-classifierr) 
 
- <img src = "github_img/hf_gradio_app_TextThema.png" width="1130" >
+<img src = "github_img/hf_gradio_app_TextThema.png" width="1130" >
+
+
 
 ## Live Website Deployment
 Deployed a Flask App built to take text content and show the themes and recommendations as output. Check `flask-deployment` branch. The website is live [here](https://textthema-multi-classifier.onrender.com/) 
