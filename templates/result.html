@@ -1,0 +1,125 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/cerulean/bootstrap.min.css"
+      integrity="sha512-dQLT/B7byn2LjN/DN4zeBKpwGV6qbidV0XiMRWQOL7TGrV7FkZFldkGG+DGMU+CQnMTcRZlUI7GMWt1j6akNew=="
+      crossorigin="anonymous" />
+    <!-- Google Fonts -  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            height: 5ch;
+        } */
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 50vh; */
+            font-size: 20px;
+        }
+
+        #text {
+            height: 100px;
+            width: 500px;
+            font-size: 15px;
+        }
+    </style>
+    
+    <!-- <title>Home Page </title> -->
+</head>
+
+<!-- <head>
+    <style>
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            height: 5ch;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            font-size: 25px;
+        }
+
+        #text {
+            height: 100px;
+            width: 500px;
+            font-size: 20px;
+        }
+    </style>
+    <div class="head"><b>Book Genre Classifier</b></div>
+</head> -->
+
+<!-- <body>
+    <div class="center">
+        <div style="height: 100px; width: 1000px;">
+            <label for="text"><b>Input Text</b></label> <br />
+
+            {{ input_text }} <br /> <br />
+
+            <label for="text"><b>Genres</b></label> <br />
+            
+            {{ output_text }}
+        </div>
+    </div>
+</body> -->
+
+
+<body class="jumbotron"> 
+
+    <!-- navbar -->
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="font-family: 'Roboto', cursive; ">
+      <div class="container">
+        <a href="../" class="navbar-brand" style="font-size: 14px;">
+          <span style="font-size:21px">🐉</span> Text Themes Classifier & Recommendation Model
+          <span style="color: rgb(184, 217, 255);font-size: 14px;"> <strong> </strong>
+          </span> </a>
+        <a href="#" style="font-size: 13px; text-decoration: none;">✒️ POETIC | 💡 QUOTE | 🎭 DIALOGUE | 📘 LITERATURE | 🖼️ DESCRIPTIVE </a>
+      </div>
+    </div>
+  
+    <br /><br /> 
+  
+    <!-- Introduction writing -->
+    <div class="jumbotron" style="text-align: center; margin-top:-50px; font-family: 'Roboto', cursive;"> 
+      <h1 class="display-5">Text Themes Classifier & Recommendation Model</h1> 
+      <h5>-- A multiclass creative text themes recommedation model --</h5>
+      <span style="font-size:40px">🎇</span>
+      <br /> 
+      <hr>   
+  
+      <!-- Main data contents -->
+    <div class="center">
+        <div style="height: 100px; width: 1000px;">
+            <label for="text"><b>Input Text</b></label> <br />
+
+            {{ input_text }} <br /> <br />
+
+            <label for="text"><b>Themes suggestions: </b></label> <br />
+            
+            {{ output_text }}
+        </div>
+    </div>
+     
+   
+</body>
+
+</html>

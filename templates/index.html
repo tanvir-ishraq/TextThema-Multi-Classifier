@@ -1,0 +1,67 @@
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- bootstrap theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/cerulean/bootstrap.min.css"
+  integrity="sha512-dQLT/B7byn2LjN/DN4zeBKpwGV6qbidV0XiMRWQOL7TGrV7FkZFldkGG+DGMU+CQnMTcRZlUI7GMWt1j6akNew=="
+  crossorigin="anonymous" />
+<!-- Google Fonts -  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  font-size: 25px; 
+} 
+#text {
+  height: 300px;
+  width: 500px;
+  font-size: 20px;
+}
+</style>
+
+<title>Home Page </title>
+</head>
+
+<body class="jumbotron"> 
+
+  <!-- navbar -->
+  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="font-family: 'Roboto', cursive; ">
+    <div class="container">
+      <a href="../" class="navbar-brand" style="font-size: 14px;">
+        <span style="font-size:21px">🐉</span> Text Themes Classifier & Recommendation Model
+        <span style="color: rgb(184, 217, 255);font-size: 14px;"> <strong> </strong>
+        </span> </a>
+      <a href="#" style="font-size: 13px; text-decoration: none;">✒️ POETIC | 💡 QUOTE | 🎭 DIALOGUE | 📘 LITERATURE | 🖼️ DESCRIPTIVE </a>
+    </div>
+  </div>
+
+  <br /><br /> 
+
+  <!-- remaining body -->
+  <div class="jumbotron" style="text-align: center; margin-top:-50px; font-family: 'Roboto', cursive;"> 
+    <h1 class="display-5">Text Themes Classifier & Recommendation Model</h1> 
+    <h5>-- A multiclass creative text themes recommedation model --</h5>
+    <span style="font-size:40px">🎇</span>
+    <br /> 
+    <hr>   
+
+    <!-- text input -->
+    <div class="center">
+      <form action="/" method="post">
+          <label for="text"><b>Enter any text. Be it Creative, Literary, Descriptive or Dialogues:</b></label> <br />
+          <textarea id="text" name="text"></textarea> <br />
+          <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+  </div>
+ </body>
+</html>
