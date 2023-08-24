@@ -1,4 +1,4 @@
-# MultiLabel-Book-Genre-Classifier
+<!-- # MultiLabel-Book-Genre-Classifier
 
 A text classification model from data collection, model training, and deployment. <br/>
 The model can classify 141 different types of book genres <br/>The keys of `deployment\genre_types_encoded.json` shows the book genres
@@ -34,4 +34,4 @@ The compressed model is deployed to HuggingFace Spaces Gradio App. The implement
 Deployed a Flask App built to take descprition and show the genres as output. Check `flask ` branch. The website is live [here](https://multilabel-book-genre-classifier.onrender.com) 
 
 <img src = "deployment/flask_app_home.PNG" width="800" height="400">
-<img src = "deployment/flask_app_results.PNG" width="800" height="200">
+<img src = "deployment/flask_app_results.PNG" width="800" height="200"> -->
