@@ -1,7 +1,3 @@
-TO BE UPDATED SOON :)
-
-“Roberta-base” (RoBERTa) is a transformer model 
-
 # TextThema - Content Classifier and Recommender System
 
 A text classification model from data collection, model training, and deployment. <br/>
