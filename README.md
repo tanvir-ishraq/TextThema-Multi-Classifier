@@ -1,7 +1,7 @@
 # TextThema - Content Classifier and Recommender System
 A Text Content Themes Classifier and smart Recommender System. 
 Here is documentation of the project process from data collection, model training, and deployment. <br/>
-The model can classify 103 different types of themes despite from input. Despite the input content is Creative, poetry, Literary, Descriptive, synopsis, quotes, songs or Dialogues.<br/>The keys of `deployment_hf\tag_types_encoded.json` shows all 103 theme types. 
+The model can classify 103 different types of themes from input. Despite the input content being of any nature such as Creative, poetry, Literary, Descriptive, synopsis, quotes, songs or Dialogues.<br/>The keys of `deployment_hf\tag_types_encoded.json` shows all 103 theme types. 
 
 The goal of this project was multimodal. To cover diverse range of objectives.
 * detect nuances like humor and simile/metaphor
