@@ -5,7 +5,6 @@ import torch, json
 
 with open("tag_types_encoded.json", "r") as fp:
   encode_tag_types = json.load(fp)
-
 tags = list(encode_tag_types.keys())
 
 tokenizer = AutoTokenizer.from_pretrained("roberta-base")
