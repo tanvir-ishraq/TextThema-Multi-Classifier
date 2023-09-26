@@ -11,6 +11,7 @@ tags = list(encode_tag_types.keys())
 tokenizer = AutoTokenizer.from_pretrained("roberta-base")
 
 inf_session = rt.InferenceSession('quote-text-classifier-quantized.onnx')
+#required to do classification prediction:
 input_name = inf_session.get_inputs()[0].name
 output_name = inf_session.get_outputs()[0].name
 
