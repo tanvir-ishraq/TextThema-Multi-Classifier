@@ -15,7 +15,7 @@ input_name = inf_session.get_inputs()[0].name
 output_name = inf_session.get_outputs()[0].name
 
 def classify_book_genre(text):
-  input_ids = tokenizer(text)['input_ids'][:512]
+  input_ids = tokenizer(text)['input_ids'][:512] #up to 512 numerical tokens
   logits = inf_session.run([output_name], {input_name: [input_ids]})[0]
   logits = torch.FloatTensor(logits)
   probs = torch.sigmoid(logits)[0]
