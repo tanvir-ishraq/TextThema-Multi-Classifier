@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
+    input_text = ''
     if request.method == "POST":
         input_text = request.form['text']
         output = predict_genres(input_text)[0]
@@ -14,9 +15,9 @@ def index():
         for idx, label in enumerate(labels):
             label_text = label_text + label
             if idx != len(labels)-1: label_text = label_text + ", "
-        return render_template("result.html", input_text=input_text, output_text=label_text)
+        return render_template("index.html", input_text=input_text, output_text=label_text)
     else:
-        return render_template("index.html")
+        return render_template("index.html", output_text='', input_text=input_text)
 
 def predict_genres(input_text):
     response = requests.post("https://tanvir-ishraq-quote-text-style-classifier.hf.space/run/predict", json={
