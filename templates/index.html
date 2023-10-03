@@ -11,57 +11,98 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-<style>
+<style> /* font-size: 25px;  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+body {
+  background-image: url('/static/img/textThema.jpg'); 
+  background-repeat: no-repeat;
+  /* background-size: cover;  */
+  background-size: 100% 100%;
+}
+.bar-content {
+  font-size: 13.5px; text-decoration: none;
+}
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
-  font-size: 25px; 
 } 
-#text {
-  height: 300px;
-  width: 500px;
-  font-size: 20px;
+.glass {
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.45);
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.ui {
+  min-height: 40vh;
+  color: rgba(0, 0, 0, 0.877);
+  /*  */
+  font-size: 18px;
+  margin-top: 68px;
 }
 </style>
 
-<title>Home Page </title>
+<title>TextThema</title>
 </head>
+
+
 
 <body class="jumbotron"> 
 
-  <!-- navbar -->
-  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="font-family: 'Roboto', cursive; ">
-    <div class="container">
-      <a href="../" class="navbar-brand" style="font-size: 14px;">
-        <span style="font-size:21px">🐉</span> Text Themes Classifier & Recommendation Model
-        <span style="color: rgb(184, 217, 255);font-size: 14px;"> <strong> </strong>
-        </span> </a>
-      <a href="#" style="font-size: 13px; text-decoration: none;">✒️ POETIC | 💡 QUOTE | 🎭 DIALOGUE | 📘 LITERATURE | 🖼️ DESCRIPTIVE </a>
-    </div>
+<!-- navbar -->
+<div class="py-1 navbar navbar-expand-lg fixed-top navbar-dark bg-dark" 
+      style="font-family: 'Roboto', cursive; ">
+
+  <div class="container">
+    <a href="../" class="navbar-brand" >
+      <h4 style="color: rgb(227, 235, 255); font-family: 'Open Sans'; " class="font-weight-bold">
+        🐉TextThema
+      </h4>  
+    </a>
+    <a href="#" class="bar-content" >
+      ✒️ POETIC | 💡 QUOTE | 🎭 DIALOGUE | 📘 LITERATURE | 🖼️ DESCRIPTIVE 
+    </a>
   </div>
+</div>
+  
 
-  <br /><br /> 
-
-  <!-- remaining body -->
-  <div class="jumbotron" style="text-align: center; margin-top:-50px; font-family: 'Roboto', cursive;"> 
-    <h1 class="display-5">Text Themes Classifier & Recommendation Model</h1> 
-    <h5>-- A multiclass creative text themes recommedation model --</h5>
-    <span style="font-size:40px">🎇</span>
-    <br /> 
-    <hr>   
-
-    <!-- text input -->
-    <div class="center">
-      <form action="/" method="post">
-          <label for="text"><b>Enter any text. Be it Creative, Literary, Descriptive or Dialogues:</b></label> <br />
-          <textarea id="text" name="text"></textarea> <br />
-          <input type="submit" value="Submit">
-      </form>
-    </div>
-
-
+<!-- I/O UI -->
+<div class="" style="text-align: center; font-family: 'Roboto', cursive;"> 
+  
+<div class="ui glass d-flex flex-column">
+  
+  <div class="center">
+    <form action="/" method="post">
+      
+      <p class="font-italic mb-1"
+          style="color: aliceblue;">Themes Classifier & Recommendation Model
+      </p>           
+      
+      <label for="text" class="font-weight-bold">
+        Enter any text. Be it Creative, Literary, Descriptive or Dialogues <br>
+        Input text:
+      </label> <br />
+      
+      <textarea name="text" placeholder=" {{input_text}} " class="pl-2"
+                style="min-width: 90%; height: 75px; font-size: 15px;"></textarea> <br />
+      <input type="submit" value="Submit" class="mt-1 btn btn-danger" >
+    </form>
   </div>
- </body>
+  
+  {% if output_text %}
+      <p class="font-weight-bold" style="color: rgba(0, 0, 0, 0.877);">
+        Themes suggestions: <br>
+        {{ output_text }}
+      </p>
+  {% endif %}
+</div>
+</div>
+
+</body>
 </html>
