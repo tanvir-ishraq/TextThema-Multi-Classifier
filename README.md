@@ -44,7 +44,7 @@ The compressed model is deployed to HuggingFace Spaces Gradio App. The implement
 ## Live Website Deployment
 Deployed a Flask App built to take text content and show the themes and recommendations as output. Check `flask-deployment` branch. The website is live [here](https://textthema-multi-classifier.onrender.com/) 
 
-<img src = "github_img/flask_app.png" width="730" >
+<img src = "github_img/flask_app.png" width="1130" >
 
 
 
