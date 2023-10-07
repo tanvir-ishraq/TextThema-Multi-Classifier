@@ -11,7 +11,7 @@ The goal of this project was multimodal. To cover diverse range of objectives.
 
 
  ## Data Collection
-Data was collected from a Goodreads Quotes Listing: https://www.goodreads.com/quotes <br/>
+Data was collected from a Goodreads Literature text Listing. Containing Literary snippets, quotes, poetry: https://www.goodreads.com/quotes <br/>
 The Dynamic website's unpredictable time based login prompts were handled. The data collection process was as follows: 
 
 The massive NLP data were scraped with `scraper/nlp_dataset_scraper.py` and stored in `scraper/quote-nlp-dataset-scraped.csv`. I employed an effecient tracking management system for scrap of massive NLP data to prevent data loss.
