@@ -35,7 +35,7 @@ The trained model has a memory of 900+MB. I compressed this model using ONNX qua
 
 
 ## Model Deployment
-A `Gradio App` was coded to deploy the compressed model HuggingFace Spaces. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/tanvir-ishraq/quote-text-style-classifierr) 
+A `Gradio App` was coded to deploy the compressed model in HuggingFace Spaces. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/tanvir-ishraq/quote-text-style-classifierr) 
 
 <img src = "github_img/hf_gradio_app_TextThema.png" width="1130" >
 
