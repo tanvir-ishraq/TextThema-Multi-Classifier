@@ -14,7 +14,12 @@ def index():
         label_text = ""
         for idx, label in enumerate(labels):
             label_text = label_text + label
-            if idx != len(labels)-1: label_text = label_text + ", "
+            if idx != len(labels)-1: 
+                label_text = label_text + ", "
+        print(label_text)
+        if label_text == "":
+            label_text = "Please try Entering longer meaningful text input next time. Model is undergoing final update. Thank you for your patience"
+            
         return render_template("index.html", input_text=input_text, output_text=label_text)
     else:
         return render_template("index.html", output_text='', input_text=input_text)
