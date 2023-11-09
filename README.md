@@ -25,7 +25,7 @@ Initially there were lots of themes and tags in the dataset. After some analysis
 
 
 ## Model Training 
-Finetuned a `roberta-base` (RoBERTa) model which is a transformers model from HuggingFace Transformers using Fastai and Blurr. With ~95% accuracy. The model training notebook can be viewed [here](https://github.com/tanvir-ishraq/TextThema-Multi-Classifier/blob/main/notebooks/quote-multi-classifier.ipynb)
+Fine-tuned a `roberta-base` (RoBERTa) model which is a transformers model from HuggingFace Transformers along with hyperparameter tuning using Fastai and Blurr. With ~93% accuracy. The model training notebook can be viewed `notebooks` folder [here](https://github.com/tanvir-ishraq/TextThema-Multi-Classifier/blob/main/notebooks/quote-multi-classifier.ipynb)
 
 <!--## Benchmark -->
 
@@ -35,7 +35,7 @@ The trained model has a memory of 900+MB. I compressed this model using ONNX qua
 
 
 ## Model Deployment
-A `Gradio App` was coded to deploy the compressed model in HuggingFace Spaces. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/tanvir-ishraq/quote-text-style-classifierr) 
+A `Gradio App` was coded to deploy the compressed model in HuggingFace Spaces. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/tanvir-ishraq/quote-text-style-classifier) 
 
 <img src = "github_img/hf_gradio_app_TextThema.png" width="1130" >
 
