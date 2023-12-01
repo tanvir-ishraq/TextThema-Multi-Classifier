@@ -18,7 +18,9 @@ def index():
                 label_text = label_text + ", "
         print(label_text)
         if label_text == "":
-            label_text = "Please try Entering longer / meaningful text input next time. Model is undergoing final update. Thank you for your cordial patience"
+            label_text = '''Please try Entering longer / more meaningful text input next time. 
+                            Temporary bottleneck while Model is undergoing final update. 
+                            Thank you for your cordial patience'''
             
         return render_template("index.html", input_text=input_text, output_text=label_text)
     else:
